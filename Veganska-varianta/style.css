@@ -37,4 +37,151 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+body{
+    color: white;
+}
 
+.horni{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 3;
+}
+.nadpis{
+    font-family: "Raleway";
+    font-weight: 800;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    z-index: 4;
+}
+.hlavni{
+    background-image: url(images/salat.jpg); 
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.hlavni::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    top: 0;
+    left: 0;
+}
+
+.maly {
+        border-top: 1px solid white; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+}
+.maly::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    top: 0;
+    left: 0;
+}
+.horni{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.hlavni .nadpis{
+    font-weight: 800;
+    font-size: 28px;
+    flex-wrap: wrap;
+}
+.dva{
+    background-image: url(images/chlebicek.jpg); 
+}
+.tri {
+    background-image: url(images/tacos.jpg); 
+}
+.ctyri{
+    background-image: url(images/cizrna.jpg); 
+}
+.pet{
+    background-image: url(images/burger.jpg); 
+}
+
+@media screen and (max-width: 480px) {
+    .hlavni{
+        min-height: 200px;
+        padding: 10px;
+    }
+    .maly{
+        padding: 10px;
+        min-height: 90px;
+    }
+    .maly .nadpis{
+        font-size: 18px;
+    }
+    .hlavni .nadpis{
+        font-size: 28px;
+    }    
+}
+@media screen and (min-width: 480px) and (max-width: 860px) {
+    .hlavni{
+        min-height: 250px;
+        padding: 20px;
+    }
+    .maly{
+        min-height: 150px;
+        padding: 20px;
+        flex-basis: 100%;
+
+    }
+    .hlavni .nadpis{
+        font-size: 36px;
+    }
+    .maly .nadpis{
+        font-size: 22px;
+    }
+    .radek{
+        display: flex;
+        flex-direction: row;
+    }
+    .dva{
+        border-right: 1px solid white;
+    }
+    .ctyri{
+        border-right: 1px solid white;
+    }
+}
+@media screen and (min-width: 860px) {
+    .hlavni{
+        min-height: 400px;
+        padding: 20px;
+        flex-basis: 33.3%;
+    }
+    .maly{
+        min-height: 200px;
+        padding: 20px;
+    }
+    .hlavni .nadpis{
+        font-size: 48px;
+    }
+    .maly .nadpis{
+        font-size: 28px;
+    }
+    .recept{
+        display: flex;
+        flex-direction: row;
+    }
+    .radek{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33.3%;
+    }
+}
