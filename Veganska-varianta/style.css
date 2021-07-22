@@ -185,3 +185,21 @@ body{
         flex-basis: 33.3%;
     }
 }
+/* prekryti lze dosahnout toho ze se vytvori nejaky div
+a tomu divu dam characters:
+.div{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: neco 
+a k hlavni je treba dat position:relative aby se 
+    to prekryti melo k cemu chytit
+    PROBLEM TOHOTO JE ZE DO HTML JE NUTNO PRIDAT
+    SAMOSTATNOU KATEGORII DIV KTERA SE HNED UZAVRE
+    / <div class="xy"></>
+    a pak slova dat lepsi z/index (pokud nefunguje
+    tak jsou treba nekdy postouchnout a dam tam
+    position:relative
+*/
